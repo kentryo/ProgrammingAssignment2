@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The function was modified from Dr. Peng's mean caching function.
+## The function was devided into two parts. The first part is to get and store the original data and the inversed matrix.
+## The second part is to validate if the matrix inversion had been caculated or not and caculate the matrix inversion if not caculated before.
 
-## Write a short comment describing this function
+## The "makeCacheMatrix" function is to get and store the original and inversed matrix data.
+## The function has a list of a function. Set and get is to store the original matrix. setinvert and get invert is to store the inversed matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -16,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The "cacheSolve" is to calculate the matrix inverse. First, the function test if the maxtrix inverse had been caculated or not.
+## If the inverse had been calculated, the function will get the inverse from cache, otherwise will caculate the inverse.
 
 cacheSolve <- function(x, ...) {
   m <- x$getinvert()
