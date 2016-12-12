@@ -1,3 +1,4 @@
+## Check for submission
 ## The function was modified from Dr. Peng's mean caching function.
 ## The function was devided into two parts. The first part is to get and store the original data and the inversed matrix.
 ## The second part is to validate if the matrix inversion had been caculated or not and caculate the matrix inversion if not caculated before.
